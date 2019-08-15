@@ -1,8 +1,11 @@
 import "./styles.css";
 
 var clickCount = 0;
+var counts = [10, 12, 15];
+var mainCount = -1;
 
 const main = () => {
+  mainCount++;
   let board = document.getElementById("board");
 
   document.querySelectorAll("td").forEach((e, i) => {
@@ -12,7 +15,7 @@ const main = () => {
 
 const handleClick = (e) => {
   //document.querySelectorAll("td").forEach((e, i) => {
-    if(e.innerHTML === "" && clickCount <= 11) {
+    if(e.innerHTML === "" && clickCount <= counts[mainCount]) {
       e.innerHTML = clickCount % 2 === 0 ? "x" : "o";
     }
   //});
