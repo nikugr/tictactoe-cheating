@@ -6,14 +6,14 @@ const main = () => {
   let board = document.getElementById("board");
 
   document.querySelectorAll("td").forEach((e, i) => {
-    e.onclick = () => {handleClick()};
+    e.onclick = () => {handleClick(e)};
   });
 }
 
-const handleClick = () => {
-  document.querySelectorAll("td").forEach((e, i) => {
+const handleClick = (e) => {
+  //document.querySelectorAll("td").forEach((e, i) => {
     e.innerHTML = e.innerHTML === "x" ? "o" : "x";
-  });
+  //});
   clickCount++;
   if(clickCount === 9) {
     alert("Player 1 won!");
