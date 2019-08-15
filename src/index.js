@@ -1,7 +1,7 @@
 import "./styles.css";
 
 var clickCount = 0;
-var counts = [10, 12, 15];
+var counts = [12, 10, 15];
 var mainCount = -1;
 
 const main = () => {
