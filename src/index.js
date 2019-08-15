@@ -1,7 +1,7 @@
 import "./styles.css";
 
 var clickCount = 0;
-var counts = [12, 10, 15];
+var counts = [9, 10, 15];
 var mainCount = -1;
 
 const main = () => {
@@ -20,7 +20,7 @@ const handleClick = (e) => {
     }
   //});
   clickCount++;
-  if(clickCount === 9) {
+  if(clickCount === counts[mainCount]) {
     alert("Player 1 won!");
   }
   else if(clickCount === 10) {
