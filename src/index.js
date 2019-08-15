@@ -12,7 +12,7 @@ const main = () => {
 
 const handleClick = (e) => {
   //document.querySelectorAll("td").forEach((e, i) => {
-    e.innerHTML = e.innerHTML === "x" ? "o" : "x";
+    e.innerHTML = 0 === clickCount % 2 ? "x" : "o";
   //});
   clickCount++;
   if(clickCount === 9) {
